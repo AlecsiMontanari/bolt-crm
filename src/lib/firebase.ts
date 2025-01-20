@@ -3,12 +3,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD2qEF1pQTNXUVeKiFbiRheAP3m3q2annM",
-  authDomain: "simple-crm-10eba.firebaseapp.com",
-  projectId: "simple-crm-10eba",
-  storageBucket: "simple-crm-10eba.firebasestorage.app",
-  messagingSenderId: "314278145200",
-  appId: "1:314278145200:web:9a7ea09122a5c72a181f75"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
